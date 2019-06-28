@@ -1,0 +1,15 @@
+Package: rrsim
+Type: Package
+Title: rrsim performs a robust regression simulation
+Version: 0.1.0
+Author: person("Thomas", "de Graaff", email = "t.de.graaff@vu.nl", role = c("aut","cre")),
+Maintainer: Thomas de Graaff <t.de.graaff@vu.nl>
+Description: A package that looks at all possible combinations of independent variables, 
+    and analyses the impact on the dependent variables. Variables can be fixed (and thus)
+    used always and fixed effects are implemented by using the lfe package
+Imports:
+    lfe
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
