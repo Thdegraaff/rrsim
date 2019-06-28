@@ -20,7 +20,7 @@ library(rrsim)
 
 # Components 
 
-- `rrs(code_name, Z_names, X_names, data, print_detail = 3)` - Estimates the first stage of a. sorting model
+- `rrs((formula, fixed = NA, fe = NA, data, k = 4)` - performs all regressions
 
 
 
