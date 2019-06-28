@@ -59,9 +59,40 @@
       
       </header><div class="row">
   <div class="contents col-md-9">
-A package that looks at all possible combinations of independent variables, 
-    and analyses the impact on the dependent variables. Variables can be fixed (and thus)
-    used always and fixed effects are implemented by using the lfe package
+
+<div id="overview" class="section level1">
+<div class="page-header"><h1 class="hasAnchor">
+<a href="#overview" class="anchor"></a>Overview</h1></div>
+<p>rr sim is a package for a robust regression simulation. More in details it checks all possible combinations of the right hand side variables and its impact on the dependent variable. It accompagnies the paper <em>Robustness and Trade</em>. This paper builds on the methodology for assessing robustness of variables in the empirical growth literature (Levine and Renelt, 1992; Sala-i-Martin, 1997). The approach involves the partitioning of a dataset into fixed variables that are included in each and every regression, a variable of interest, and other controlling (or switch) variables; and the subsequent regression analysis on the data for varying combinations of variables. The quasi-experiments generate parameter estimates from a wide range of possible regression specifications.</p>
+</div>
+<div id="installation" class="section level1">
+<h1 class="hasAnchor">
+<a href="#installation" class="anchor"></a>Installation</h1>
+<p><code>rrsim</code> is not currently available from CRAN, but you can install the development version from github with (note that you need to install the package <code>devtools</code> to be able to install packages from GitHub:</p>
+<pre class="{r}"><code><a href="https://www.rdocumentation.org/packages/devtools/topics/reexports"># install.packages("devtools")
+# library("devtools")
+devtools::install_github("thdegraaff/rrsim")</a></code></pre>
+<p>Once installation is completed, the package can be loaded.</p>
+<pre class="{r}"><code><a href="https://www.rdocumentation.org/packages/base/topics/library">library(rrsim)</a></code></pre>
+</div>
+<div id="components" class="section level1">
+<h1 class="hasAnchor">
+<a href="#components" class="anchor"></a>Components</h1>
+<ul>
+<li>
+<code>rrs((formula, fixed = NA, fe = NA, data, k = 4)</code> - performs all regressions</li>
+</ul>
+</div>
+<div id="usage" class="section level1">
+<h1 class="hasAnchor">
+<a href="#usage" class="anchor"></a>Usage</h1>
+</div>
+<div id="getting-help" class="section level1">
+<h1 class="hasAnchor">
+<a href="#getting-help" class="anchor"></a>Getting help</h1>
+<p>If you need assistance using <code>rrsim</code>, you can get in touch by emailing <a href="t.de.graaff@vu.nl">t.de.graaff@vu.nl</a>.</p>
+</div>
+
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
