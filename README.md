@@ -20,9 +20,23 @@ library(rrsim)
 
 # Components 
 
+At the moment, there are only the following two functions (checked and worked) in this package. One to do the simulation of regressions and the other to analyse the results: 
+
 - `rrs((formula, fixed = NA, fe = NA, data, k = 4)` - performs all regressions
+- `analyse_meta(coef, t-values)` - analyses the simulation results
 
+## Note
 
+Note that this package at the moment is **work in progress** and that the data it uses is the well-know `mtcars` dataset, which is built in in `R`. The data that is used for the paper is proprietary.
+
+## What is still to be incorporated (...at least)?
+
+- Create a function that displays the distribution of (standardized) coefficients in a sort of funnel plot (or the forest plot of the `meta` package)
+  * Know how, but need to create the function
+- Create a function that analyses the impact of the **presence** of control variables by using fixed effects on every variable
+- Create and use a trade dataset for the examplew
+- Update the vignette 
+  * Not so important for now, but useful for documentation and first draft of the report
 
 # Usage
 

@@ -12,7 +12,7 @@
 <script src="pkgdown.js"></script><meta property="og:title" content="rrsim performs a robust regression simulation">
 <meta property="og:description" content="A package that looks at all possible combinations of independent variables, 
     and analyses the impact on the dependent variables. Variables can be fixed (and thus)
-    used always and fixed effects are implemented by using the lfe package">
+    used always and fixed effects are implemented by using the lfe package.">
 <meta name="twitter:card" content="summary">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -78,10 +78,36 @@ devtools::install_github("thdegraaff/rrsim")</a></code></pre>
 <div id="components" class="section level1">
 <h1 class="hasAnchor">
 <a href="#components" class="anchor"></a>Components</h1>
+<p>At the moment, there are only the following two functions (checked and worked) in this package. One to do the simulation of regressions and the other to analyse the results:</p>
 <ul>
 <li>
 <code>rrs((formula, fixed = NA, fe = NA, data, k = 4)</code> - performs all regressions</li>
+<li>
+<code><a href="reference/analyse_meta.html">analyse_meta(coef, t-values)</a></code> - analyses the simulation results</li>
 </ul>
+<div id="note" class="section level2">
+<h2 class="hasAnchor">
+<a href="#note" class="anchor"></a>Note</h2>
+<p>Note that this package at the moment is <strong>work in progress</strong> and that the data it uses is the well-know <code>mtcars</code> dataset, which is built in in <code>R</code>. The data that is used for the paper is proprietary.</p>
+</div>
+<div id="what-is-still-to-be-incorporated-at-least" class="section level2">
+<h2 class="hasAnchor">
+<a href="#what-is-still-to-be-incorporated-at-least" class="anchor"></a>What is still to be incorporated (…at least)?</h2>
+<ul>
+<li>Create a function that displays the distribution of (standardized) coefficients in a sort of funnel plot (or the forest plot of the <code>meta</code> package)
+<ul>
+<li>Know how, but need to create the function</li>
+</ul>
+</li>
+<li>Create a function that analyses the impact of the <strong>presence</strong> of control variables by using fixed effects on every variable</li>
+<li>Create and use a trade dataset for the examplew</li>
+<li>Update the vignette
+<ul>
+<li>Not so important for now, but useful for documentation and first draft of the report</li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 <div id="usage" class="section level1">
 <h1 class="hasAnchor">
