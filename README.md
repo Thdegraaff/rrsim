@@ -23,7 +23,8 @@ library(rrsim)
 At the moment, there are only the following two functions (checked and worked) in this package. One to do the simulation of regressions and the other to analyse the results: 
 
 - `rrs((formula, fixed = NA, fe = NA, data, k = 4)` - performs all regressions
-- `analyse_meta(coef, t-values)` - analyses the simulation results
+- `rrs_analysis(coef, t-values)` - analyses the simulation results
+- `rrs_bp(analysis, rm_constant = FALSE)` - create a barplot of the results
 
 ## Note
 

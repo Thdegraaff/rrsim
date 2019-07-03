@@ -13,8 +13,8 @@
 #' result <- rrs(mpg ~., data = mtcars, k = 4)
 #' coeff <- result[1]
 #' t_values <- result[2]
-#' analyse_meta(coeff, t_values)
-analyse_meta <- function(coeff, t_values) {
+#' rrs_analysis(coeff, t_values)
+rrs_analysis <- function(coeff, t_values) {
   n = nrow(coeff)
   coeff <- as.data.frame(coeff)
   t_values <- as.data.frame(t_values)

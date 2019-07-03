@@ -9,7 +9,9 @@ Description: A package that looks at all possible combinations of independent va
     used always and fixed effects are implemented by using the lfe package.
 Imports:
     lfe,
-    dplyr
+    dplyr,
+    ggplot2,
+    tidyr
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
